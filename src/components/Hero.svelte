@@ -29,6 +29,43 @@
         @apply w-full max-w-[500px] h-auto;
     }
 
+
+    /* // X-Small devices (portrait phones, less than 576px) */
+    @media (max-width: 575.98px) { 
+        .hero_section_main {
+            @apply flex-col px-8 h-fit pb-8;
+        }
+        .hero_section_main .left_col {
+            @apply justify-start items-center pt-28 h-fit px-0 w-full;
+        }
+        .hero_section_main .left_col h2 {
+            @apply text-4xl text-heading_prime tracking-wide text-center;
+        }
+        .hero_section_main .left_col p {
+            @apply text-base text-heading_grey pt-6 pb-8 pr-0 text-center;
+        }
+        .hero_section_main .right_col .hero_img {
+            @apply hidden;
+        }
+        .hero_section_main .right_col {
+            @apply hidden;
+        }
+     }
+
+    /* // Small devices (landscape phones, less than 768px) */
+    /* @media (max-width: 767.98px) { ... } */
+
+    /* // Medium devices (tablets, less than 992px) */
+    /* @media (max-width: 991.98px) { ... } */
+
+    /* // Large devices (desktops, less than 1200px) */
+    /* @media (max-width: 1199.98px) { ... } */
+
+    /* // X-Large devices (large desktops, less than 1400px) */
+    /* @media (max-width: 1399.98px) { ... } */
+
+    /* // XX-Large devices (larger desktops)
+    // No media query since the xxl breakpoint has no upper bound on its width */
 </style>
 
 <section class="hero_section_main">
@@ -36,7 +73,7 @@
         <h2 class="main_heading poppins-extrabold">Buy Airtime, Data and TV
         <span class="main_heading poppins-extrabold">Subscriptions in Seconds</span>
         </h2>
-        <p class="poppins-medium">Top up MTN, Telecel, AirtelTigo and pay for DSTV and GOtv subscriptions instantly with one simple app.</p>
+        <p class="poppins-medium">Pay bills, buy airtime, purchase data and manage your digital payments easily with Just Buy — powered entirely by mobile money.</p>
         <a href="https://tinyurl.com/Datankoaa" target="_blank" class="download_btn poppins-regular">
             <span>Download app</span>
         </a>
