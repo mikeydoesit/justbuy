@@ -70,7 +70,7 @@
             @apply flex justify-center h-[-webkit-fill-available];
         }
         .how_it_works_main .content .left_col .slide_bg {
-            @apply h-[15rem] w-fit px-12 py-6 rounded-2xl bg-[url(/images/btn_bg.png)] bg-center flex justify-center items-center shadow-md inset-shadow-sm;
+            @apply h-[20rem] w-fit px-12 py-6 rounded-2xl bg-[url(/images/btn_bg.png)] bg-center flex justify-center items-center shadow-md inset-shadow-sm;
         }
         .how_it_works_main .content .left_col img {
             @apply h-[-webkit-fill-available];

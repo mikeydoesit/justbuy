@@ -37,6 +37,62 @@
     .testimonials .second_row {
         @apply grid grid-cols-2 gap-6 px-16 mt-6;
     }
+
+
+    /* // X-Small devices (portrait phones, less than 576px) */
+    @media (max-width: 575.98px) { 
+       .testimonials {
+            @apply bg-white h-auto w-full flex flex-col px-4 py-12;
+        }
+        .testimonials .heading {
+            @apply text-3xl leading-10 text-heading_secondary mb-8 text-center max-w-[600px] mx-auto tracking-wide;
+        }
+        .testimonials .first_row {
+            @apply grid grid-cols-1 gap-6 px-0;
+        }
+        .testimonials .first_row .card, .testimonials .second_row .card {
+            @apply flex flex-col border-2 border-card_border bg-card_bg rounded-lg py-6 px-8;
+        }
+        .testimonials .first_row .card .star_rating, .testimonials .second_row .card .star_rating {
+            @apply flex flex-row gap-1 mb-6;
+        }
+        .testimonials .first_row .card .content, .testimonials .second_row .card .content {
+            @apply flex flex-col justify-between h-[-webkit-fill-available];
+        }
+        .testimonials .first_row .card .star_rating img, .testimonials .second_row .card .star_rating img {
+            @apply w-6 h-6;
+        }
+        .testimonials .first_row .card .review_text, .testimonials .second_row .card .review_text {
+            @apply italic mb-6 text-heading_secondary;
+        }
+        .testimonials .first_row .card .author, .testimonials .second_row .card .author {
+            @apply flex flex-row items-center text-heading_secondary;
+        }
+        .testimonials .first_row .card .author .avatar, .testimonials .second_row .card .author .avatar {
+            @apply w-10 h-10 mr-3;
+        }
+        .testimonials .first_row .card .author .avatar img, .testimonials .second_row .card .author .avatar img {
+            @apply w-full h-full object-cover rounded-md;
+        }
+        .testimonials .second_row {
+            @apply hidden;
+        }
+     }
+
+    /* // Small devices (landscape phones, less than 768px) */
+    /* @media (max-width: 767.98px) { ... } */
+
+    /* // Medium devices (tablets, less than 992px) */
+    /* @media (max-width: 991.98px) { ... } */
+
+    /* // Large devices (desktops, less than 1200px) */
+    /* @media (max-width: 1199.98px) { ... } */
+
+    /* // X-Large devices (large desktops, less than 1400px) */
+    /* @media (max-width: 1399.98px) { ... } */
+
+    /* // XX-Large devices (larger desktops)
+    // No media query since the xxl breakpoint has no upper bound on its width */
 </style>
 
 <section class="testimonials">
