@@ -47,6 +47,71 @@
     .how_it_works_main .content .right_col .step .title_wrapper .title {
         @apply text-base text-heading_secondary;
     }
+
+
+    /* // X-Small devices (portrait phones, less than 576px) */
+    @media (max-width: 575.98px) { 
+       .how_it_works_main {
+            @apply bg-white h-auto w-full flex flex-col px-4 py-12 justify-center items-center;
+        }
+        .how_it_works_main .heading {
+            @apply text-3xl leading-10 text-heading_secondary mb-8 text-center max-w-[600px] mx-auto tracking-wide;
+        }
+        .how_it_works_main .content {
+            @apply flex flex-col-reverse w-full gap-6;
+        }
+        .how_it_works_main .content .left_col, .how_it_works_main .content .right_col {
+            @apply flex flex-col w-full px-2 h-fit;
+        }
+        .how_it_works_main .content .left_col {
+            @apply flex justify-center items-center;
+        }
+        .how_it_works_main .content .right_col {
+            @apply flex justify-center h-[-webkit-fill-available];
+        }
+        .how_it_works_main .content .left_col .slide_bg {
+            @apply h-[15rem] w-fit px-12 py-6 rounded-2xl bg-[url(/images/btn_bg.png)] bg-center flex justify-center items-center shadow-md inset-shadow-sm;
+        }
+        .how_it_works_main .content .left_col img {
+            @apply h-[-webkit-fill-available];
+        }
+        .how_it_works_main .content .right_col .step {
+            @apply mb-5 cursor-pointer;
+        }
+        .how_it_works_main .content .right_col .step:last-of-type {
+            @apply mb-0;
+        }
+        .how_it_works_main .content .right_col .step .title_wrapper {
+            @apply flex flex-row items-center mb-2;
+        }
+        .how_it_works_main .content .right_col .step .text {
+            @apply ml-10 text-heading_secondary text-sm;
+        }
+        .how_it_works_main .content .right_col .step .title_wrapper .number {
+            @apply bg-[url(/images/btn_bg.png)] bg-center bg-contain rounded-md w-6 h-6 flex justify-center items-center mr-4;
+        }
+        .how_it_works_main .content .right_col .step .title_wrapper .number span {
+            @apply text-white text-xs;
+        }
+        .how_it_works_main .content .right_col .step .title_wrapper .title {
+            @apply text-base text-heading_secondary;
+        }
+     }
+
+    /* // Small devices (landscape phones, less than 768px) */
+    /* @media (max-width: 767.98px) { ... } */
+
+    /* // Medium devices (tablets, less than 992px) */
+    /* @media (max-width: 991.98px) { ... } */
+
+    /* // Large devices (desktops, less than 1200px) */
+    /* @media (max-width: 1199.98px) { ... } */
+
+    /* // X-Large devices (large desktops, less than 1400px) */
+    /* @media (max-width: 1399.98px) { ... } */
+
+    /* // XX-Large devices (larger desktops)
+    // No media query since the xxl breakpoint has no upper bound on its width */
 </style>
 
 <section class="how_it_works_main">
